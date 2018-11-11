@@ -68,6 +68,10 @@ function getDate(x, b) {
 var db =
   data = [
   {
+    email: "GranitG@gmail.com",
+    password: "111"
+  },
+  {
     email: "aglasswala@gmail.com",
     password: "123"
   }, 
@@ -91,7 +95,11 @@ function signIn() {
       document.location.href = "body.html";
       break;
     } else {
+<<<<<<< HEAD
       document.getElementById("demo").innerHTML = "Wrong password or Email"
+=======
+      console.log("Wrong Password!")
+>>>>>>> be3347a1e14b02619226554592b0d7fa9b64cc90
     }
   }
 }
