@@ -1,11 +1,6 @@
-
-p, h1, nav, head, a, h2, input, a {
+p, h1, nav, head, a, h2, input, a, ul, div {
   font-family: "IBM Plex Mono", monospace;
 }
-
-label{margin-left: 20px;}
-#datepicker{width:180px; margin: 0 20px 20px 20px;}
-#datepicker > span:hover{cursor: pointer;}
 
 .section {
   background-size: cover;
@@ -13,14 +8,15 @@ label{margin-left: 20px;}
   width:100%;
   min-height:100%;
   padding-top:75px;
-  overflow: auto;
 }
-.col-lg {
-  width: 5vw;
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
 }
 
-.signin {
-  display: block;
+.card {
+	height: 50vh;
+	width: 15vw;
 }
 
 .form-heading { color:#fff; font-size:23px;}
@@ -39,7 +35,7 @@ label{margin-left: 20px;}
   border-radius: 2px;
   margin: 10px auto 30px;
   max-width: 38%;
-  padding: 50px 70px 70px 71px;
+  padding: 10px 20px 70px 71px;
 }
 
 .login-form .form-group {
@@ -157,35 +153,6 @@ label{margin-left: 20px;}
   }
 }
 
-.btn {
-  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  font-family: 'Varela Round';
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: .15rem;
-  border: 0;
-}
-
-.btn-primary {
-  background-color: #64a19d;
-}
-
-.btn-primary:hover {
-  background-color: #4f837f;
-}
-
-.btn-primary:focus {
-  background-color: #4f837f;
-  color: white;
-}
-
-.btn-primary:active {
-  background-color: #467370 !important;
-}
-
-
 body, html {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
@@ -201,3 +168,31 @@ a:focus, a:hover {
   color: #3c6360;
 }
 
+.agenda {  }
+
+/* Dates */
+.agenda .agenda-date { width: 170px; }
+.agenda .agenda-date .dayofmonth {
+  width: 40px;
+  font-size: 36px;
+  line-height: 36px;
+  float: left;
+  text-align: right;
+  margin-right: 10px; 
+}
+.agenda .agenda-date .shortdate {
+  font-size: 0.75em; 
+}
+
+
+/* Times */
+.agenda .agenda-time { width: 140px; } 
+
+
+/* Events */
+.agenda .agenda-events {  } 
+.agenda .agenda-events .agenda-event {  } 
+
+@media (max-width: 767px) {
+    
+}
